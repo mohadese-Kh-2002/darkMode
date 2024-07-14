@@ -1,0 +1,70 @@
+@import url('./reset.css');
+@import url('./font.css');
+
+:root{
+    --primary-background-color:#feffc2;
+    --primary-color-text:#101010;
+    --section-background-color:#434400;
+}
+:root[data-theme='dark']{
+    --primary-background-color:#000025;
+    --primary-color-text:#fff;
+    --section-background-color:#7c7cff;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*{
+    border: none;
+    outline: none;
+   
+}
+body{
+    font-size: 1.6rem;
+    background: var(--primary-background-color);
+    font-family: 'raleway';
+    height: 100vh;
+}
+
+.title{
+    font-size: 10rem;
+    font-weight: 800;
+    color:var(--primary-color-text) ;
+    text-align: center;
+}
+
+.footer{
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 10rem;
+    padding: 1.5rem;
+    background-color: var(--section-background-color);
+}
+.darkMode-content{
+
+}
+.darkMode__icon{
+    font-size: 4rem;
+    color:  var(--primary-color-text);
+}
+.darkMode__handler{
+    width: 15rem;
+    background-color: var(--primary-background-color);
+    height: 5rem;
+    padding: 1rem;
+    position: relative;
+}
+.darkMode__handler-circle{
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: var(--section-background-color);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 2px;
+    margin: auto ;
+}
+
